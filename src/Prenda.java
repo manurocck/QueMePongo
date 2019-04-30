@@ -6,31 +6,32 @@ public class Prenda {
 	String marca;
 	String descripcion;
 	String tela;
+	String zona;
 	
-	public Prenda(String colorP, String colorS, String descrip, String marc, String tel) {
+	//constructor
+	public Prenda(String colorP, String colorS, String descrip, String marc, String tel, String zon) {
 		colorPrimario = colorP;
 		colorSecundario = colorS;
 		marca = marc;
 		descripcion = descrip;
 		tela = tel;
+		zona = zon;
 		return;
 	}
-	public String zona() {
-		
-	}
+	
 	public boolean noEsIgual(Prenda prenda) {
 		if(prenda.getColorPrimario() == colorPrimario) {
 			if(prenda.getColorSecundario() == colorSecundario) {
 				if(prenda.getMarca() == marca) {
 					if(prenda.getDescripcion() == descripcion) {
 						if(prenda.getTela() == tela) {
-							return true;
+							return false;
 						}
 					}
 				}
 			}
 		}
-		return false;
+		return true;
 	}
 	
 
@@ -41,6 +42,9 @@ public class Prenda {
 	}
 	public String getColorSecundario() {
 		return colorSecundario;
+	}
+	public String getZona() {
+		return zona;
 	}
 	private String getTela() {
 		return tela;

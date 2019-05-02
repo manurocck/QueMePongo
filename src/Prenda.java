@@ -55,4 +55,8 @@ public class Prenda {
 	private String getMarca() {
 		return marca;
 	}
+
+	public void mostrar() {
+		System.out.println( getDescripcion() );
+	}
 }

@@ -17,8 +17,10 @@ public class thisIsMain {
 		unGuardarropas.agregarPrenda("Blanco","","Musculosa de Mickey","","","Superior");
 		unGuardarropas.agregarPrenda("Amarillo", "","Pollera Amarilla","","","Inferior");
 		unGuardarropas.agregarPrenda("Azul","","Crocs","","Goma","Calzado");
+		unGuardarropas.agregarPrenda("Rosa","","Gorra Rolling Stones","","","Accesorio");
 		
 		manu.agregarGuardarropas(unGuardarropas);
+//		manu.mostrarGuardarropas();
 		manu.analizarAtuendosGuardarropas();
 	}
 }

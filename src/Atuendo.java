@@ -7,6 +7,7 @@ public class Atuendo {
 	Guardarropas guardarropa = null;
 	
 	public void setGuardarropas(Guardarropas guardarropas) {
+		guardarropa = null;
 		guardarropa = guardarropas;
 		return;
 	}
@@ -29,6 +30,12 @@ public class Atuendo {
 
 	public void atuendosPosibles() { //combina suponiendo que tiene que tener sí o sí al menos algo puesto en cada posicion
 		
+		superior = null;
+		inferior = null;
+		calzado = null;
+		accesorio = null;
+		
+		
 		int i = 0;
 		
 		while( (superior = guardarropa.tomarPrenda("Superior", superior) )!=null ) {
@@ -44,6 +51,13 @@ public class Atuendo {
 			}
 		}
 		
+	}
+
+
+
+	public void mostrarGuardarropas() {
+		guardarropa.mostrar();
+		return;
 	}
 
 }
